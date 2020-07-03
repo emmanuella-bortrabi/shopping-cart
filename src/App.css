@@ -1,38 +1,82 @@
-.App {
+.card{
+  padding: 2rem 1rem;
+  background-color: seagreen;
+  border-radius:15px;
+  position: relative;
+  margin-top: 2rem;
+  height: 500px;
+}
+
+.percentage{
+  background-color: sandybrown;
+  color: black;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 0.7rem 1.5rem;
+  position: absolute;
+  right: 3rem;
+  z-index:1000;
+}
+
+
+.card-text-heading{
   text-align: center;
+  font-size: 2rem;
+  z-index: 1000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-text-paragraph{
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-price{
+display:flex;
+justify-content:space-between;
+align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.card-price-amount-old{
+  display:block;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: red;
+  text-decoration: line-through;
+  align-content: center;
+}
+
+
+.card-price-amount-new{
+  display: block;
+  color: green;
+  font-size: 1rem;
+}
+
+.cart-between{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: rgb(1,2,1);
 }
 
-.App-link {
-  color: #61dafb;
+
+.cart-between-text{
+  font-size: 1.4rem;
+  color: rgb(1,2,1);
+  display: block;
+  margin-bottom: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.card-image-container{
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+
+.card-img-top{
+  width: 100%;
+  height: 200px;
 }
